@@ -29,16 +29,11 @@ rm -rf  /tmp/keyValStore*; rm -rf  /tmp/kvs-hfc-e2e ~/test.properties; rm -rf /v
 
 cd /opt/gopath/src/github.com/hyperledger/fabric-sdk-java/
 
-```
-
-maven install
-```
 mvn install
+
 ```
 
 Execute end-to-end testcase
-
-mvn install
 
 ```
 mvn failsafe:integration-test -DskipITs=false
